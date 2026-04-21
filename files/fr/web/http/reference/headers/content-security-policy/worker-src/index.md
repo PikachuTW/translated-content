@@ -19,7 +19,7 @@ La directive HTTP [`Content-Security-Policy`](/fr/docs/Web/HTTP/Reference/Header
     <tr>
       <th scope="row">Valeur par défaut</th>
       <td>
-        Si cette directive est absente, l'agent utilisateur consultera d'abord la directive <a href="/fr/docs/Web/HTTP/Headers/Content-Security-Policy/child-src"><code>child-src</code></a>, puis la directive <a href="/fr/docs/Web/HTTP/Headers/Content-Security-Policy/script-src"><code>script-src</code></a> et enfin la directive <a href="/fr/docs/Web/HTTP/Headers/Content-Security-Policy/default-src"><code>default-src</code></a>.
+        Si cette directive est absente, l'agent utilisateur consultera d'abord la directive <a href="/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/child-src"><code>child-src</code></a>, puis la directive <a href="/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/script-src"><code>script-src</code></a> et enfin la directive <a href="/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/default-src"><code>default-src</code></a>.
       </td>
     </tr>
   </tbody>
@@ -38,7 +38,7 @@ Content-Security-Policy: worker-src <source> <source>;
 
 `<source>` peut être n'importe quelle valeur parmi celles énumérées dans [l'article sur les valeurs sources CSP](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#sources).
 
-On notera que cet ensemble de valeurs peut être utilisé pour toutes les [directives de récupération](/fr/docs/Glossary/Fetch_directive) (et pour [certaines autres directives](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#directives_associ%c3%a9es)).
+On notera que cet ensemble de valeurs peut être utilisé pour toutes les [directives de récupération](/fr/docs/Glossary/Fetch_directive) (et pour [certaines autres directives](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#directives_associées)).
 
 ## Exemples
 

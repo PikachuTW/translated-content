@@ -17,7 +17,7 @@ La directive HTTP [`Content-Security-Policy`](/fr/docs/Web/HTTP/Reference/Header
       <td><a href="/fr/docs/Glossary/Fetch_directive">Directive de récupération</a></td>
     </tr>
     <tr>
-      <th scope="row">Utilisation de <a href="/fr/docs/Web/HTTP/Headers/Content-Security-Policy/default-src"><code>default-src</code></a> par défaut</th>
+      <th scope="row">Utilisation de <a href="/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/default-src"><code>default-src</code></a> par défaut</th>
       <td>
         Oui, si cette directive est absente, l'agent utilisateur consultera la directive <code>default-src</code>.
       </td>
@@ -38,7 +38,7 @@ Content-Security-Policy: img-src <source> <source>;
 
 `<source>` peut être n'importe quelle valeur parmi celles énumérées dans [l'article sur les valeurs sources CSP](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#sources).
 
-On notera que cet ensemble de valeurs peut être utilisé pour toutes les [directives de récupération](/fr/docs/Glossary/Fetch_directive) (et pour [certaines autres directives](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#directives_associ%c3%a9es)).
+On notera que cet ensemble de valeurs peut être utilisé pour toutes les [directives de récupération](/fr/docs/Glossary/Fetch_directive) (et pour [certaines autres directives](/fr/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directive_syntax#directives_associées)).
 
 ## Exemples
 

@@ -84,7 +84,7 @@ Firefox 3.5 introduit un certain nombre de nouvelles fonctionnalités, ainsi qu'
   - : L'API Selectors permet d'interroger un document afin d'identifier les éléments correspondant à une règle de sélection donnée.
 - [Évènements de mouvement de souris](/fr/docs/DOM/Évènements_de_mouvement_de_souris)
   - : Firefox 3.5 gère les évènements de mouvements de souris dont les glissades sur un trackpad.
-- [L'objet `NodeIterator`](/fr/docs/DOM/NodeIterator)
+- [L'objet `NodeIterator`](/fr/docs/Web/API/NodeIterator)
   - : L'objet `NodeIterator` permet de parcourir la liste de nœuds dans un sous-arbre DOM.
 - [L'évènement MozAfterPaint](/fr/Évènements_DOM_spécifiques_à_Gecko#MozAfterPaint)
   - : Ce nouvel évènement DOM est envoyé après les mises à jour de l'affichage dans les fenêtres.
@@ -119,7 +119,7 @@ Firefox 3.5 introduit un certain nombre de nouvelles fonctionnalités, ainsi qu'
   - : Les éléments canvas gèrent à présent l'API texte d'HTML5.
 - [Effets d'ombres dans un `canvas`](/fr/Tutoriel_canvas/Ajout_de_styles_et_de_couleurs#Ombres)
   - : Les effets d'ombrages sont à présent gérés dans canvas.
-- [`createImageData()`](/fr/docs/HTML/Canvas/Manipulation_de_pixels_avec_canvas#création_d'un_objet_imagedata)
+- [`createImageData()`](/fr/docs/HTML/Canvas/Manipulation_de_pixels_avec_canvas#création_dun_objet_imagedata)
   - : La méthode `createImageData()` de canvas est à présent gérée, ce qui permet à du code de créer spécifiquement un objet `ImageData` plutôt que demander que ce soit fait automatiquement. Les performances d'autres méthodes d'`ImageData` peuvent en être améliorées puisqu'elles n'ont pas à créer l'objet.
 - Attribut `moz-opaque`
   - : L'attribut DOM `moz-opaque` a été ajouté, ce qui permet à canvas de savoir si oui ou non la transparence devra être prise en compte. Si le canvas sait qu'il n'y a pas de transparence, les performances de dessin peuvent être optimisées.
@@ -138,17 +138,17 @@ Firefox 3.5 introduit un certain nombre de nouvelles fonctionnalités, ainsi qu'
 
 ### Autres améliorations
 
-- La propriété [`wholeText`](/fr/docs/DOM/Text.wholeText) et la méthode [`replaceWholeText()`](/fr/docs/DOM/Text.replaceWholeText) ont été ajoutées aux nœuds texte.
-- La propriété [`element.children`](/fr/docs/DOM/Element.children) a été ajoutée. Elle renvoie une _collection_ d'éléments enfants de l'élément donné.
+- La propriété [`wholeText`](/fr/docs/Web/API/Text/wholeText) et la méthode [`replaceWholeText()`](/fr/docs/Web/API/Text) ont été ajoutées aux nœuds texte.
+- La propriété [`element.children`](/fr/docs/Web/API/Element/children) a été ajoutée. Elle renvoie une _collection_ d'éléments enfants de l'élément donné.
 - L'API Element Traversal est à présent gérée par l'objet DOM [Element](/fr/docs/Web/API/Element).
-- Les nœuds HTML document peuvent à présent être clonés à l'aide de [`cloneNode()`](/fr/docs/DOM/Node.cloneNode).
+- Les nœuds HTML document peuvent à présent être clonés à l'aide de [`cloneNode()`](/fr/docs/Web/API/Node/cloneNode).
 - La méthode DOM non-standard `getBoxObjectFor()` a été supprimée. Utilisez plutôt [`getBoundingClientRect()`](/fr/docs/Web/API/Element/getBoundingClientRect).
 - Les éléments DOM dispatchés peuvent être redispatchés. Ceci permet à Firefox 3.5 de passer le test 30 d'Acid 3.
 - Des améliorations ont été apportés à la gestion de DOM 2 Range.
 - Dans un contexte non-chrome, les objets catchés dans les exceptions sont à présent les objets rejetés tels quels plutôt qu'une enveloppe [XPConnect](/fr/XPConnect) contenant ces objets.
 - Les références ID dans SVG sont à présent directes.
 - Les filtres SVG fonctionnent à présent avec `foreignObject`.
-- La méthode `GetSVGDocument()` a été ajoutée aux éléments [`object`](/fr/docs/HTML/Element/object) et [`iframe`](/fr/docs/Web/HTML/Reference/Elements/iframe) pour assurer une meilleure compatibilité.
+- La méthode `GetSVGDocument()` a été ajoutée aux éléments [`object`](/fr/docs/Web/HTML/Reference/Elements/object) et [`iframe`](/fr/docs/Web/HTML/Reference/Elements/iframe) pour assurer une meilleure compatibilité.
 - La définition implicite de propriétés dans des initialiseurs d'objets et de tableaux n'exécute plus les mutateurs en JavaScript.
 - La variable `gDownloadLastDir.path` a été renommée en `gDownloadLastDir.file` étant donné qu'elle fait référence à un objet `nsIFile` et non à un chemin.
 - La variable `gDownloadLastDirPath` a été renommée en `gDownloadLastDirFile` étant donné qu'elle fait référence à un objet `nsIFile` et non à un chemin.
@@ -176,7 +176,7 @@ Si vous développez des extensions, vous devriez tout d'abord lire [Mise à jour
 - Ajout de l'attribut [`level`](/fr/XUL/Attributs/Panel.level) à l'élément [`panel`](/fr/XUL/panel)&nbsp;; celui-ci indique si le panel apparait par dessus les autres applications, ou uniquement au-dessus de la fenêtre contenant le panel.
 - Les éléments XUL gèrent à présent les propriétés `clientHeight`, `clientWidth`, `scrollHeight` et `scrollWidth`.
 - Les éléments [`keyset`](/fr/XUL/keyset) disposent à présent d'un attribut `disabled`.
-- De plus, les `keyset`s peuvent être supprimés à l'aide de la méthode [`removeChild()`](/fr/docs/DOM/Node.removeChild) du nœud.
+- De plus, les `keyset`s peuvent être supprimés à l'aide de la méthode [`removeChild()`](/fr/docs/Web/API/Node/removeChild) du nœud.
 - [`mozIStorageStatement`](/fr/mozIStorageStatement) a vu sa méthode `initialize()` supprimée&nbsp;; ses utilisateurs doivent utiliser la méthode [`createStatement()`](</fr/mozIStorageConnection#createStatement()>) à la place pour obtenir un nouvel objet statement.
 - L'API [Storage](/fr/Storage) permet à présent d'effectuer des requêtes asynchrones.
 - L'interface [`nsICookie2`](/fr/nsICookie2) expose à présent l'heure à laquelle les cookies ont été créés dans son nouvel attribut `creationTime`.
